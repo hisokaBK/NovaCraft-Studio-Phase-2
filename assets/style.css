@@ -1,0 +1,20 @@
+ #p{
+               background-image: url('../assets/jj.jpg');
+               background-size: cover;
+               -webkit-background-clip: text;
+               -webkit-text-fill-color: transparent;
+               font-size: 100px;
+                font-weight: 900;
+         }
+
+         #sc{
+            background-image: url('../assets/gb.gif');
+            background-repeat: no-repeat;
+            background-size: cover;
+          
+         }
+         .row{
+              font-size: 50px;
+             font-weight: 600;
+  
+         }

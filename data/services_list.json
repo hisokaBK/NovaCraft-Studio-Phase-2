@@ -1,0 +1,9 @@
+[
+     {"title":"Création de sites Web","img":"../assets/imag3.jpeg","description":"Sites vitrines, e-commerce, applications modernes."},
+     {"title":"Développement sur mesure","img":"../assets/imag6.jpeg","description":"Outils internes, solutions métiers spécifiques."},
+     {"title":"Automatisation & API","img":"../assets/imag5.jpg","description":"Automatisation des tâches, intégration d'API."},
+     {"title":"Organisation & WORKFLOW","img":"../assets/imag7.jpg","description":"Automatisation des tâches, manage mante."},
+     {"title":"Mantenace actuel SPA","img":"../assets/imag1.png","description":"Automatisation des tâches, intégration SPA."},
+     {"title":"Resue mangement serveurs","img":"../assets/imag2.jpeg","description":"Automatisation des tâches, intégration serv."}
+]
+
