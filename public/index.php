@@ -21,6 +21,6 @@ $pageTitles = [
 
 $title = $pageTitles[$page];
 
-include_once "views/".$page.'.view.php';
+include_once "../app/views/".$page.'.view.php';
 
 ?>

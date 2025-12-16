@@ -1,7 +1,6 @@
 <?php
 
     session_start();
-
     $_SESSION['error']=[
         'name'=>'',
         'email'=>'',
@@ -62,6 +61,6 @@
     exit();
   }
     
-    header("Location: ../index.php/contact");
+    header("Location: ../../public/index.php/contact");
     
 ?>

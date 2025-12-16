@@ -1,6 +1,6 @@
 <?php 
 
-$services_fill=file_get_contents("data/services_list.json") ;
+$services_fill=file_get_contents("../data/services_list.json") ;
 
 $services=json_decode($services_fill,true);
 

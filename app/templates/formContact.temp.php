@@ -1,4 +1,4 @@
-<form class="max-w-xl mx-auto bg-white p-8 shadow-md rounded-lg space-y-4" action="/novaCraft_Studio/controllers/form_validation.php" method="POST">
+<form class="max-w-xl mx-auto bg-white p-8 shadow-md rounded-lg space-y-4" action="../../app/controllers/form_validation.php" method="POST">
 
       <input type="text" name="nom" placeholder="Votre nom" class="w-full border  px-4 py-2 rounded-lg  <?php echo !empty($_SESSION['error']['name'])?'border-red-500':'' ?>">
       <?php echo !empty($_SESSION['error']['name'])?"<p class='px-4 text-red-400'>".$_SESSION['error']['name']."</p>":"" ?>
