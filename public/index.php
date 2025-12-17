@@ -1,12 +1,5 @@
 <?php
 
-include_once '../config/dbconnection.php';
-connection();
-
-echo '<pre>';
-print_r(connection());
-echo '</pre>';
-
 $page ;
 if(isset($_SERVER['PATH_INFO'])){
     $page = trim($_SERVER['PATH_INFO'],'/');
