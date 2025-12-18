@@ -1,6 +1,5 @@
 <?php
 
-    session_start();
     $_SESSION['error']=[
         'name'=>'',
         'email'=>'',
@@ -57,10 +56,11 @@
         'message'=>$message
     ];
 
-    header("Location: ../views/sand_email.view.php");
+     require_once "../app/views/contact.view.php";
     exit();
   }
     
-    header("Location: ../../public/index.php/contact");
+   require_once "../app/views/contact.view.php";
+
     
 ?>

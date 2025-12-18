@@ -5,10 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <title> <?php echo $title ?> </title>
-  <?php 
-      echo isset($_SERVER['PATH_INFO'])?'<link rel="stylesheet" href="../../assets/output.css">':'<link rel="stylesheet" href="../assets/output.css">'
+ <link rel="stylesheet" href="assets/output.css">
      
-  ?>
+  
   
 </head>
 <body class="bg-gray-50 text-gray-800">

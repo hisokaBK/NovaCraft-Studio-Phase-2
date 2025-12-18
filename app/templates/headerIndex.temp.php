@@ -8,4 +8,4 @@
         <li><a href="views/contact.view.php?page=contact" class="hover:text-blue-600">Contact</a></li>
       </ul>
     </nav>
-  </header>
+</header>
