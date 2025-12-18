@@ -20,7 +20,7 @@ if ($route === '') {
     $route = 'home';
 }
 
-$list_url = ['home', 'about', 'services', 'contact','form_validation'];
+$list_url = ['home', 'about', 'services', 'contact','form_validation','register'];
 
 if (!in_array($route, $list_url)) {
     $route = '404';
@@ -33,7 +33,8 @@ $pageTitles = [
     'services' => 'Services - NovaCraft Studio',
     'contact'  => 'Contact - NovaCraft Studio',
     'form_validation'=>'form validation',
-    '404'      => 'Page non trouvée'
+    '404'      => 'Page non trouvée',
+    'register'=>'Page register',
 ];
 
 $title = $pageTitles[$route];
