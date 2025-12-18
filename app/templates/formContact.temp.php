@@ -1,3 +1,4 @@
+<?php echo (isset($_SESSION['ok']) && strlen($_SESSION['ok'])>1)?"<p>{$_SESSION['ok']}</p>":''; ?>
 <form class="max-w-xl mx-auto bg-white p-8 shadow-md rounded-lg space-y-4" action="form_validation" method="POST">
 
       <input type="text" name="nom" placeholder="Votre nom" class="w-full border  px-4 py-2 rounded-lg  <?php echo !empty($_SESSION['error']['name'])?'border-red-500':'' ?>">
