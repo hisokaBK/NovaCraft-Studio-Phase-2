@@ -6,6 +6,8 @@
         'message'=>''
     ];
 
+    $_SESSION['ok']="";
+
    
     $comp=0;
     
@@ -16,7 +18,7 @@
     if(empty($name)){
         $_SESSION['error']['name']='name is required';
         $comp=0;
-    }elseif(!preg_match("/^[a-zA-Z]{5,}$/",$name)){
+    }elseif(!preg_match("/^[a-zA-Z\s]{2,50}$/",$name)){
            $_SESSION['error']['name']='name must contain 5 characters and just alphabte';
         $comp=0;
     }else{
@@ -56,10 +58,17 @@
         'message'=>$message
     ];
 
+    $_SESSION['ok']='message envoyer';
+
+     $stmt = $conn->prepare(
+         "INSERT INTO contacts (name, email, message) VALUES (?, ?, ?)"
+     );
+     $stmt->bind_param("sss",$name, $email, $message);
+     $stmt->execute();
      require_once "../app/views/contact.view.php";
     exit();
   }
-    
+    $_SESSION['ok']='';
    require_once "../app/views/contact.view.php";
 
     
