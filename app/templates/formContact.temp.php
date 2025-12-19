@@ -1,5 +1,5 @@
-<?php echo (isset($_SESSION['ok']) && strlen($_SESSION['ok'])>1)?"<p>{$_SESSION['ok']}</p>":''; ?>
-<form class="max-w-xl mx-auto bg-white p-8 shadow-md rounded-lg space-y-4" action="form_validation" method="POST">
+<?php echo (isset($_SESSION['ok']) && strlen($_SESSION['ok'])>1)?"<p class=' text-green-500 text-center p-3'>{$_SESSION['ok']}</p>":''; ?>
+<form class="max-w-xl mx-auto bg-white p-8 shadow-md rounded-lg space-y-4" action="/form_validation" method="POST">
 
       <input type="text" name="nom" placeholder="Votre nom" class="w-full border  px-4 py-2 rounded-lg  <?php echo !empty($_SESSION['error']['name'])?'border-red-500':'' ?>">
       <?php echo !empty($_SESSION['error']['name'])?"<p class='px-4 text-red-400'>".$_SESSION['error']['name']."</p>":"" ?>
