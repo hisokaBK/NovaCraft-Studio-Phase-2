@@ -62,6 +62,11 @@ if ($comp == 2) {
 
     $_SESSION['logined']=true;
 
+    $_SESSION['user']=[
+          'name'=>$user['name'],
+          'email'=>$user['email']
+    ];
+
 
     require_once "../app/views/home.view.php";
     exit();

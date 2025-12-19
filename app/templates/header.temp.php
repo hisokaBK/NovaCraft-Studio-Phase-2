@@ -27,7 +27,7 @@
              class="<?php echo  $_SERVER['REQUEST_URI']!='/register'?'text-white border border-gray-400 px-2 py-[2px] rounded-xl hover:text-blue-600 hover:border-blue-600':'text-blue-600 font-medium'?>">Sign up</a>
           </li>
 
-          <li class="<?php echo !isset($_SESSION['logined'])?'hidden':'text-white'?>"><a href="/controller_sign_out">Sign out</a>
+          <li class="<?php echo !isset($_SESSION['logined'])?'hidden':'text-white hover:text-blue-600'?>"><a href="/controller_sign_out">Sign out</a>
           </li>
           <li class="<?php echo !isset($_SESSION['logined'])?'hidden':''?>"><a href="/profil"><img src="assets/prof.png" alt="profil" class=" rounded-full h-[31px] w-[31px]"></a>
           </li>
