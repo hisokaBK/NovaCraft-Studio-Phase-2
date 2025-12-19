@@ -2,7 +2,7 @@
 
 if (isset($_SESSION['logined'])){
      require_once "../app/views/home.view.php";
-     exit();
+     exit();  
 }
 
 $_SESSION['error'] = [

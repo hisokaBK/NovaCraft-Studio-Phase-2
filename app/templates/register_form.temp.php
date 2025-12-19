@@ -4,7 +4,7 @@ echo (isset($_SESSION['ok']) && strlen($_SESSION['ok']) > 1)
     : '';
 ?>
 
-<section class="container mx-auto py-16">
+<section class="container mx-auto py-24">
     <h2 class="text-3xl font-bold mb-6 text-center">Create Account</h2>
 
     <form method="POST" action="/controller_register"
