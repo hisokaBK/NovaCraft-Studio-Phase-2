@@ -20,7 +20,9 @@ if ($route === '') {
     $route = 'home';
 }
 
-$list_url = ['home', 'about', 'services', 'contact','form_validation','register'];
+$list_url = ['home', 'about', 'services', 'contact','form_validation','register','controller_register'];
+
+$No_cntroler = ['home', 'about', 'services', 'contact','404','register','login'];
 
 if (!in_array($route, $list_url)) {
     $route = '404';
@@ -35,12 +37,13 @@ $pageTitles = [
     'form_validation'=>'form validation',
     '404'      => 'Page non trouvée',
     'register'=>'Page register',
+    'controller_register'=>'controller_register'
 ];
 
 $title = $pageTitles[$route];
 
-if($route=='form_validation'){
-    require_once "../app/controllers/form_validation.php";
+if(!in_array($route, $No_cntroler)){
+    require_once "../app/controllers/{$route}.php";
 }else{
     require_once "../app/views/{$route}.view.php";
 }
