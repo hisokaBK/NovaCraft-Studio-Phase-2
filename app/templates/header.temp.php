@@ -19,17 +19,17 @@
         </li>
       </ul>
       <ul class="flex space-x-6">
-          <li><a href="/login"
-             class="<?php echo  $_SERVER['REQUEST_URI']!='/login'?'text-black hover:text-blue-600':'text-blue-600 font-medium' ?>">Sing in</a>
+          <li class="<?php echo isset($_SESSION['logined'])?'hidden':''?>"><a href="/login"
+             class="<?php echo  $_SERVER['REQUEST_URI']!='/login'?'text-black hover:text-blue-600':'text-blue-600 font-medium' ?>">Sign in</a>
           </li>
-          <li><a href="/register"
-             class="<?php echo  $_SERVER['REQUEST_URI']!='/register'?'text-black border border-black px-2 py-[2px] rounded-xl hover:text-blue-600 hover:border-blue-600':'text-blue-600 font-medium' ?>">Sing up</a>
+          <li class="<?php echo isset($_SESSION['logined'])?'hidden':''?>"><a href="/register"
+             class="<?php echo  $_SERVER['REQUEST_URI']!='/register'?'text-black border border-black px-2 py-[2px] rounded-xl hover:text-blue-600 hover:border-blue-600':'text-blue-600 font-medium'?>">Sign up</a>
           </li>
 
-          <li class="hidden"><a href="/sign_out"
-             class="<?php echo  $_SERVER['REQUEST_URI']!='/sign_out'?'text-black hover:text-blue-600':'text-blue-600 font-medium' ?>">sign out</a>
+          <li class="<?php echo !isset($_SESSION['logined'])?'hidden':''?>"><a href="/sign_out"
+             class="<?php echo  $_SERVER['REQUEST_URI']!='/sign_out'?'text-black hover:text-blue-600':'text-blue-600 font-medium' ?>">Sign out</a>
           </li>
-          <li class="hidden"><a href="/profil"><img src="assets/prof.png" alt="profil" class=" rounded-full h-[31px] w-[43px]"></a>
+          <li class="<?php echo !isset($_SESSION['logined'])?'hidden':''?>"><a href="/profil"><img src="assets/prof.png" alt="profil" class=" rounded-full h-[31px] w-[43px]"></a>
           </li>
       </ul>
     </nav>

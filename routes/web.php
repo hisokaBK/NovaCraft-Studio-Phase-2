@@ -1,17 +1,12 @@
 <?php 
-    session_start();
-
-require_once "../config/dbconnection.php";
+ session_start();
+ require_once "../config/dbconnection.php";
 
 $conn = connection();
-$stmt = $conn->prepare("SELECT id, name FROM contacts");
-$stmt->execute();
-$result = $stmt->get_result();
-$contacts = $result->fetch_all(MYSQLI_ASSOC);
 
 $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
-$basePath = ''; 
+$basePath =''; 
 
 
 $route = trim($uri, '/');
@@ -20,7 +15,7 @@ if ($route === '') {
     $route = 'home';
 }
 
-$list_url = ['home', 'about', 'services', 'contact','form_validation','register','controller_register'];
+$list_url = ['home', 'about', 'services', 'contact','form_validation','register','login','controller_register','controller_login'];
 
 $No_cntroler = ['home', 'about', 'services', 'contact','404','register','login'];
 
@@ -34,10 +29,12 @@ $pageTitles = [
     'about'    => 'À propos - NovaCraft Studio',
     'services' => 'Services - NovaCraft Studio',
     'contact'  => 'Contact - NovaCraft Studio',
-    'form_validation'=>'form validation',
-    '404'      => 'Page non trouvée',
-    'register'=>'Page register',
-    'controller_register'=>'controller_register'
+    'form_validation' => 'form validation',
+    '404'       => 'Page non trouvée',
+    'register'  => 'Page register',
+    'login'     => 'Page login',
+    'controller_register'  => 'controller_register',
+    'controller_login'=> 'controller_login'
 ];
 
 $title = $pageTitles[$route];

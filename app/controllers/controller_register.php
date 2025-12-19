@@ -1,5 +1,10 @@
 <?php
 
+if (isset($_SESSION['logined'])){
+     require_once "../app/views/home.view.php";
+     exit();
+}
+
 $_SESSION['error'] = [
     'name' => '',
     'email' => '',
