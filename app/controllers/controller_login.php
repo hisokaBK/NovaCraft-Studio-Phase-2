@@ -58,7 +58,7 @@ if ($comp == 2) {
         exit();
     }
 
-    $_SESSION['role'] = $user['password'];
+    $_SESSION['role'] = $user['role'];
 
     $_SESSION['logined']=true;
 

@@ -15,7 +15,7 @@ if ($route === '') {
     $route = 'home';
 }
 
-$list_url = ['home', 'about', 'services', 'contact','form_validation','register','login','controller_register','controller_login'];
+$list_url = ['home', 'about', 'services', 'contact','form_validation','register','login','controller_register','controller_login','controller_sign_out'];
 
 $No_cntroler = ['home', 'about', 'services', 'contact','404','register','login'];
 
@@ -34,7 +34,8 @@ $pageTitles = [
     'register'  => 'Page register',
     'login'     => 'Page login',
     'controller_register'  => 'controller_register',
-    'controller_login'=> 'controller_login'
+    'controller_login'=> 'controller_login',
+    'controller_sign_out'=>'controller_sign_out'
 ];
 
 $title = $pageTitles[$route];
