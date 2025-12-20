@@ -10,9 +10,9 @@ $services=json_decode($services_fill,true);
     <div class="grid md:grid-cols-3 gap-8">
       <?php foreach($services as $service){
           echo "
-             <div class='bg-white p-6 shadow-md rounded-lg'>
+             <div class='bg-white p-6 shadow-md rounded-lg flex flex-col'>
              <h3 class='text-xl font-bold mb-2 text-teal-600'>{$service['title']}</h3>
-             <img src='{$service['img']}' alt='eroor'/>
+             <img src='{$service['img']}' alt='eroor' class='min-h-[230px] max-h-[120px]'/>
              <p class='text-gray-600'>{$service['description']}</p>
              </div>
           ";

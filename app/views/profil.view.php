@@ -6,9 +6,8 @@
   
   <title> <?php echo $title ?> </title>
  <link rel="stylesheet" href="assets/output.css">
-     
-  
-  
+ <link rel="stylesheet" href="assets/style.css">
+
 </head>
 <body class="bg-gray-50 text-gray-800">
 

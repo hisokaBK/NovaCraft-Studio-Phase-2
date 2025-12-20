@@ -50,9 +50,7 @@ if ($comp == 2) {
     }
 
     $user = $result->fetch_assoc();
-    $_SESSION['pss']=$user['password'];
-
-    if (!password_verify($password, $user['password']) && $password == $user['password']) {
+    if (!password_verify($password, $user['password']) || $password == $user['password']) {
         $_SESSION['error']['password_log'] = 'incorrect password';
         require_once "../app/views/login.view.php";
         exit();
@@ -68,8 +66,9 @@ if ($comp == 2) {
           'role'=>$user['role']
     ];
 
-
+    $_SESSION['hello']="Welcome {$_SESSION['user']['name']}";
     require_once "../app/views/home.view.php";
+    
     exit();
 }
 

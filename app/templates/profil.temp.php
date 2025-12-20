@@ -26,7 +26,7 @@ $_SESSION['user'];
             <p><strong>Role :</strong> <?php echo htmlspecialchars($_SESSION['user']['role']); ?></p>
             <p><strong>Email :</strong> <?php echo htmlspecialchars($_SESSION['user']['email']); ?></p>
 
-            <img src="assets/elm.gif" alt="">
+            <img src="assets/images/elm.gif" alt="">
         </div>
 
         <form method="POST" action="/controller_sign_out">

@@ -6,9 +6,8 @@
   
   <title> <?php echo $title ?> </title>
  <link rel="stylesheet" href="assets/output.css">
-     
-  
-  
+ <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/js/flach.js"></script>
 </head>
 <body class="bg-gray-50 text-gray-800">
 

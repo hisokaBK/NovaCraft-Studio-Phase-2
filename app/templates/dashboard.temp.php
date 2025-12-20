@@ -6,10 +6,14 @@
         <div class="flex justify-between items-center mb-6">
             <h2 class="text-3xl font-bold text-sky-600">Users Dashboard</h2>
 
+            <h2 class="text-3xl font-bold text-sky-600">
+                 <span class="border border-sky-600 px-3  rounded-full"><?php echo htmlspecialchars($comp['allusers']) ?></span>
+            </h2>
+
         </div>
 
       <div class="flex">
-       <img src="assets/dachbor.gif" alt="">
+       <img src="assets/images/dachbor.gif" alt="">
         <table class="w-full border-collapse">
             <thead>
                 <tr class="bg-gray-100 text-left">

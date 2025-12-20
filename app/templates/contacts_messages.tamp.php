@@ -1,7 +1,12 @@
 <div class="max-w-6xl mx-auto bg-white p-6 shadow-md rounded-lg mb-8">
         <div class="flex items-center gap-3 mb-6 justify-between">
             <h2 class="text-2xl font-bold text-sky-600">Contact Messages</h2>
-            <img class="h-[60px]" src="assets/ss.jpg" alt="">
+            <img class="h-[60px]" src="assets/images/ss.jpg" alt="">
+            <h2 class="text-3xl font-bold text-sky-600">
+                <span  class="border border-sky-600 px-3  rounded-full">
+                  <?php echo $allMessages['allMessages'] ?>
+                </span></h2>
+            
         </div>
 
         <table class="w-full border-collapse">

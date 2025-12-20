@@ -4,5 +4,5 @@
       DigitalWave Solutions est une agence spécialisée dans la création et le développement de solutions digitales modernes.
       Notre mission est d'accompagner les entreprises dans leur transformation numérique grâce à des outils efficaces et adaptés.
     </p>
-   <div class="flex justify-center"> <img src="assets/bch_dch.png" alt=""></div>
+   <div class="flex justify-center"> <img src="assets/images/bch_dch.png" alt=""></div>
   </section>

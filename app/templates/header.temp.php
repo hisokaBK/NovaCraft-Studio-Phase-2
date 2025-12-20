@@ -29,7 +29,7 @@
 
           <li class="<?php echo !isset($_SESSION['logined'])?'hidden':'text-white hover:text-blue-600'?>"><a href="/controller_sign_out">Sign out</a>
           </li>
-          <li class="<?php echo !isset($_SESSION['logined'])?'hidden':''?>"><a href="/profil"><img src="assets/prof.png" alt="profil" class="rounded-full h-[31px] w-[31px]"></a>
+          <li class="<?php echo !isset($_SESSION['logined'])?'hidden':''?>"><a href="/profil"><img src="assets/images/prof.png" alt="profil" class="rounded-full h-[31px] w-[31px]"></a>
           </li>
       </ul>
     </nav>
