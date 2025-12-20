@@ -4,7 +4,7 @@ if (!isset($_SESSION['user'])) {
     exit();
 }
 
-$user = $_SESSION['user'];
+$_SESSION['user'];
 ?>
 
 <!DOCTYPE html>
@@ -19,12 +19,14 @@ $user = $_SESSION['user'];
 <section class="container mx-auto py-16">
     <div class="max-w-xl mx-auto bg-white p-8 shadow-md rounded-lg space-y-4">
 
-        <h2 class="text-3xl font-bold text-center">My Profile</h2>
+        <h2 class="text-3xl font-bold text-center text-sky-600"><?php  echo htmlspecialchars($_SESSION['user']['name']) ;?></h2>
 
         <div class="border-t pt-4 space-y-2">
-            <p><strong>Name :</strong> <?php echo htmlspecialchars($user['name']); ?></p>
-            <p><strong>Email :</strong> <?php echo htmlspecialchars($user['email']); ?></p>
-            <img src="assets/fani.gif" alt="">
+            <p><strong>Name :</strong> <?php echo htmlspecialchars($_SESSION['user']['name']); ?></p>
+            <p><strong>Role :</strong> <?php echo htmlspecialchars($_SESSION['user']['role']); ?></p>
+            <p><strong>Email :</strong> <?php echo htmlspecialchars($_SESSION['user']['email']); ?></p>
+
+            <img src="assets/elm.gif" alt="">
         </div>
 
         <form method="POST" action="/controller_sign_out">

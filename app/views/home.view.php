@@ -16,11 +16,11 @@
 
 
 
-  include('../app/templates/header.temp.php');
+  include(__DIR__.'/../templates/header.temp.php');
 
-  include('../app/templates/homeSection.temp.php');
+  include(__DIR__.'/../templates/homeSection.temp.php');
 
-  include('../app/templates/footer.temp.php')
+  include(__DIR__.'/../templates/footer.temp.php')
 
   ?> 
 

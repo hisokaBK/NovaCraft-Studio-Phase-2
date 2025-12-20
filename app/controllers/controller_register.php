@@ -11,7 +11,7 @@ $_SESSION['error'] = [
     'password' => ''
 ];
 
-$_SESSION['ok'] = "";
+$_SESSION['ok_r'] = "";
 
 $comp = 0;
 
@@ -64,7 +64,7 @@ if ($comp == 3) {
         'email' => $email
     ];
 
-    $_SESSION['ok'] = 'account created successfully';
+    $_SESSION['ok_r'] = 'account created successfully';
 
     $stmt = $conn->prepare(
         "INSERT INTO users (name, email, password) VALUES (?, ?, ?)"
@@ -72,9 +72,9 @@ if ($comp == 3) {
     $stmt->bind_param("sss", $name, $email, $hashedPassword);
     $stmt->execute();
 
-    require_once "../app/views/register.view.php";
-    exit();
+   header("Location: /login");
+  exit();
 }
 
-$_SESSION['ok'] = '';
-require_once "../app/views/register.view.php";
+$_SESSION['ok_r'] = '';
+require_once "../app/views/login.view.php";

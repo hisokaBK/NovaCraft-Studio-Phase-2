@@ -6,7 +6,7 @@ echo isset($_SESSION['pss'])?"<h1>{$_SESSION['pss']}</h1>":'';
 ?>
 
 <section class="container mx-auto py-[121px]">
-    <h2 class="text-3xl font-bold mb-6 text-center">Login</h2>
+    <h2 class="text-3xl font-bold mb-6 text-center text-sky-600">Login</h2>
 
     <form method="POST" action="/controller_login"
           class="max-w-xl mx-auto bg-white p-8 shadow-md rounded-lg space-y-4">

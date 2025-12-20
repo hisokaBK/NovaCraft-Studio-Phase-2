@@ -1,6 +1,6 @@
 <?php 
- session_start();
- require_once "../config/dbconnection.php";
+session_start();
+require_once __DIR__."/../config/dbconnection.php";
 
 $conn = connection();
 
@@ -15,7 +15,7 @@ if ($route === '') {
     $route = 'home';
 }
 
-$list_url = ['home', 'about', 'services', 'contact','form_validation','register','login','controller_register','controller_login','controller_sign_out','profil'];
+$list_url = ['home', 'about', 'services', 'contact','form_validation','register','login','controller_register','controller_login','controller_sign_out','profil','dashboard'];
 
 $No_cntroler = ['home', 'about', 'services', 'contact','404','register','login','profil'];
 
@@ -36,12 +36,17 @@ $pageTitles = [
     'controller_register'  => 'controller_register',
     'controller_login'=> 'controller_login',
     'controller_sign_out'=>'controller_sign_out',
-    'profil'=>'your profil'
+    'profil'=>'your profil',
+    'dashboard'=>'admin dashboard'
 ];
 
 $title = $pageTitles[$route];
 
 if(!in_array($route, $No_cntroler)){
+     if($route=='dashboard'){
+        require_once "../app/controllers/controller_dashboard.php";
+        exit();
+     }
     require_once "../app/controllers/{$route}.php";
 }else{
     require_once "../app/views/{$route}.view.php";

@@ -64,7 +64,8 @@ if ($comp == 2) {
 
     $_SESSION['user']=[
           'name'=>$user['name'],
-          'email'=>$user['email']
+          'email'=>$user['email'],
+          'role'=>$user['role']
     ];
 
 

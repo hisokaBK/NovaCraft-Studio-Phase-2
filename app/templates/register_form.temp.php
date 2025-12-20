@@ -1,11 +1,11 @@
 <?php 
-echo (isset($_SESSION['ok']) && strlen($_SESSION['ok']) > 1)
-    ? "<p class='text-green-500 text-center p-3'>{$_SESSION['ok']}</p>"
+echo (isset($_SESSION['ok_r']) && strlen($_SESSION['ok_r']) > 1)
+    ? "<p class='text-green-500 text-center p-3'>{$_SESSION['ok_r']}</p>"
     : '';
 ?>
 
 <section class="container mx-auto py-24">
-    <h2 class="text-3xl font-bold mb-6 text-center">Create Account</h2>
+    <h2 class="text-3xl font-bold mb-6 text-center text-sky-600">Create Account</h2>
 
     <form method="POST" action="/controller_register"
           class="max-w-xl mx-auto bg-white p-8 shadow-md rounded-lg space-y-4">
