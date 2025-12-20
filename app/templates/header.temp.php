@@ -15,8 +15,8 @@
         <li><a href="/contact"
              class="<?php echo  $_SERVER['REQUEST_URI']!='/contact'?'text-white hover:text-blue-600':'text-blue-600 font-medium' ?>">Contact</a>
         </li>
-        <li class="<?php echo isset($_SESSION['role']) && $_SESSION['role']=='admin'?'':'hidden'?>"><a href="/bord"
-             class="<?php echo  $_SERVER['REQUEST_URI']!='/bord'?'text-white hover:text-blue-600':'text-blue-600 font-medium' ?> ">bord</a>
+        <li class="<?php echo isset($_SESSION['role']) && $_SESSION['role']=='admin'?'':'hidden'?>"><a href="/dashboard"
+             class="<?php echo  $_SERVER['REQUEST_URI']!='/dashboard'?'text-white hover:text-blue-600':'text-blue-600 font-medium' ?> ">dashboard</a>
         </li>
       </ul>
       <ul class="flex space-x-6">
@@ -29,10 +29,10 @@
 
           <li class="<?php echo !isset($_SESSION['logined'])?'hidden':'text-white hover:text-blue-600'?>"><a href="/controller_sign_out">Sign out</a>
           </li>
-          <li class="<?php echo !isset($_SESSION['logined'])?'hidden':''?>"><a href="/profil"><img src="assets/prof.png" alt="profil" class=" rounded-full h-[31px] w-[31px]"></a>
+          <li class="<?php echo !isset($_SESSION['logined'])?'hidden':''?>"><a href="/profil"><img src="assets/images/prof.png" alt="profil" class="rounded-full h-[31px] w-[31px]"></a>
           </li>
       </ul>
     </nav>
   </header>
   </section>
-  <div class=" h-10"></div>
+  <div class="h-10"></div>

@@ -14,7 +14,8 @@
   <?php 
   require_once('../app/templates/header.temp.php') ;
 
-  require_once('../app/templates/contactSection.temp.php');
+  require_once('../app/templates/dashboard.temp.php');
+  require_once('../app/templates/contacts_messages.tamp.php');
 
   require_once('../app/templates/footer.temp.php')
   

@@ -6,9 +6,8 @@
   
   <title> <?php echo $title ?> </title>
  <link rel="stylesheet" href="assets/output.css">
-     
-  
-  
+ <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/js/flach.js"></script>
 </head>
 <body class="bg-gray-50 text-gray-800">
 
@@ -16,11 +15,11 @@
 
 
 
-  include('../app/templates/header.temp.php');
+  include(__DIR__.'/../templates/header.temp.php');
 
-  include('../app/templates/homeSection.temp.php');
+  include(__DIR__.'/../templates/homeSection.temp.php');
 
-  include('../app/templates/footer.temp.php')
+  include(__DIR__.'/../templates/footer.temp.php')
 
   ?> 
 
